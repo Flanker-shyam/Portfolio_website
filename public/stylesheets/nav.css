@@ -1,0 +1,43 @@
+.back-img {
+    /* background-color: black; */
+    /* background-image: url('../images/programming-reveal-love-balvpj90bq07034q.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    padding: 40px;
+    color: rgb(176, 174, 174);
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-items {
+    margin: 20px 0 30px 0;
+    font-size: 22px;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li {
+    display: inline;
+    padding: 0 20px 0 0;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(176, 174, 174);
+}
+
+a:hover {
+    color: rgb(83, 79, 79);
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shyam-Sunder</title>
+  <link rel="stylesheet" href="../stylesheets/index.css">
+  <link rel="stylesheet" href="/stylesheets/card.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d4ad4e735c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- I am a <span class="type"><span>Love</span></span> -->
+  <div id="header">
+  </div>
+  <%-include ("partials/navbar.ejs") %>
+    <div>
+      <h1 class="work-title">Work and Projects</h1>
+      <div class="card-container" style="display:flex">
+        <% for (var i=1; i<=data.length; i++ ) { %>
+          <div class="card">
+            <img src="../../images/Opa.png" />
+            <div class="name">Card 5</div>
+            <div class="bar">
+              <div class="filledbar"></div>
+            </div>
+            <div class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure repellat perferendis
+              facilis aperiam corrupti incidunt explicabo voluptatibus maiores nostrum sint.</div>
+            <div class="tools">
+              <sapn>Tools use</sapn>
+              <br class="tools-name">
+              <p class="lang"> Node.js</p>
+              <p class="lang">JavaScript</p>
+              <p class="lang">Replit</p>
+            </div>
+            <!-- </div> -->
+          </div>
+          <% } %>
+      </div>
+    </div>
+    <%-include ("partials/footer.ejs") %>
+
+      <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/* .container {
+   
+} */
+
+.card {
+    width: 300px;
+    margin: 60px;
+    height: 450px;
+    position: relative;
+    border-radius: 50px  1px;
+    background: #100e17;
+    box-shadow: 1rem 1rem 3rem rgb(32, 31, 31);
+    /* border:  solid#efefef 1px; */
+}
+
+.bar {
+    height: 1px;
+    margin: 0px 15px;
+    width: 90%;
+    background: rgba(69, 69, 69, 0.254);
+}
+
+.filledbar {
+    width: 0px;
+    height: 100%;
+    transition: 0.6s ease-out;
+    background: linear-gradient(90deg, rgb(94, 201, 255) 0%, rgb(255, 78, 78) 65%, rgb(194, 0, 0) 100%);
+
+}
+
+.card:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.name {
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.details {
+    padding: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.772);
+}
+
+.tools {
+    height: 90px;
+    text-align: center;
+}
+
+.tools>sapn {
+    font-size: 20px;
+    color: rgb(116, 140, 128);
+}
+
+.lang {
+    margin: -0.1px;
+    font-size: 15px;
+    padding-top: 10px;
+    color: rgb(99, 119, 198);
+}
+
+img {
+
+    margin: auto;
+    width: 100px;
+    display: flex;
+    margin-top: 20px;
+    background: #000;
+    border-radius: 50px;
+}
