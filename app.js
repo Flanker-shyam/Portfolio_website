@@ -3,8 +3,7 @@ const path = require("path");
 const cors = require("cors");
 const middlewares = require("./middleware");
 const app = express();
-const routes = require('./routes');
-const getData = require('./github');
+const getData = require('./githubData');
 
 const port = process.env.PORT || 3000;
 
@@ -16,12 +15,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 app.use(middlewares.setHeaders);
-app.use('/github_api', routes);
 
-app.get("/api", async(req, res) => {
-    var data = await getData.fetchData('https://api.github.com/users/Flanker-shyam/repos');
-    res.render('index', {data:data});
+app.get("/api", async (req, res) => {
+    res.render('index', {});
 });
+
+app.get("/getData", async (req, res) => {
+    var data = await getData.fetchData('https://api.github.com/users/Flanker-shyam/repos');
+    res.render('card', {data:data});
+})
 
 app.use("*", (req, res) => {
     res.status(404).json({

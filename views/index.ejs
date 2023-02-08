@@ -15,37 +15,19 @@
 </head>
 
 <body>
-  <!-- I am a <span class="type"><span>Love</span></span> -->
   <div id="header">
+    <h1 style="font-size: 40px;">Hello, I am <em>Shyam Sunder</em></h1>
+    <h1>I am a Backend developer</h1>
+    <button autofocus id="gitData">My Work <span style='font-size:25px; display: inline;'>&#8609;</span></button>
   </div>
   <%-include ("partials/navbar.ejs") %>
     <div>
+      <%-include ("partials/about.ejs") %>
       <h1 class="work-title">Work and Projects</h1>
-      <div class="card-container" style="display:flex">
-        <% for (var i=1; i<=data.length; i++ ) { %>
-          <div class="card">
-            <img src="../../images/Opa.png" />
-            <div class="name">Card 5</div>
-            <div class="bar">
-              <div class="filledbar"></div>
-            </div>
-            <div class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure repellat perferendis
-              facilis aperiam corrupti incidunt explicabo voluptatibus maiores nostrum sint.</div>
-            <div class="tools">
-              <sapn>Tools use</sapn>
-              <br class="tools-name">
-              <p class="lang"> Node.js</p>
-              <p class="lang">JavaScript</p>
-              <p class="lang">Replit</p>
-            </div>
-            <!-- </div> -->
-          </div>
-          <% } %>
-      </div>
     </div>
     <%-include ("partials/footer.ejs") %>
 
-      <script src="index.js"></script>
+      <script src="scripts/index.js"></script>
 </body>
 
 </html>

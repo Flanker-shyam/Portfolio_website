@@ -2,10 +2,11 @@
 const fetch = require('node-fetch');
 const constants = require('constants');
 const { generateOptions } = require('./utils');
-let arr=[];
+
 const user = 'Flanker-shyam'
 module.exports.fetchData = async function getUserRepoName(url)
 {
+    let arr=[];
     const options = generateOptions('/users/' + user + '/repos');
     let response = await fetch(url, options);
     let result = await response.json();
@@ -16,13 +17,13 @@ module.exports.fetchData = async function getUserRepoName(url)
         }
     })
     var ans = await getRepoData(arr);
-    console.log(ans.length);
     return ans;
 }
 
-var fordata=[];
+
 async function getRepoData(arr1)
 {
+    var fordata=[];
     for(name1 of arr1){
         const options = generateOptions('/repos/' + user + '/' + name1);
         let dataHere={};
