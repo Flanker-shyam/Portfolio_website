@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Shyam-Sunder</title>
   <link rel="stylesheet" href="../stylesheets/index.css">
-  <link rel="stylesheet" href="/stylesheets/card.css">
+  <link rel="stylesheet" href="../stylesheets/card.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
@@ -18,16 +18,25 @@
   <div id="header">
     <h1 style="font-size: 40px;">Hello, I am <em>Shyam Sunder</em></h1>
     <h1>I am a Backend developer</h1>
-    <button autofocus id="gitData">My Work <span style='font-size:25px; display: inline;'>&#8609;</span></button>
+    <div style="display:flex; flex-direction: row;">
+      <div class="button"><button autofocus id="gitData">My Work <span
+            style='font-size:25px; display: inline;'>&#8609;</span></button></div>
+      <div class="fun-image"><img id="funny" src="../images/happyGuy.png" style="height:200px; width:150px;"></div>
+    </div>
   </div>
   <%-include ("partials/navbar.ejs") %>
     <div>
       <%-include ("partials/about.ejs") %>
-      <h1 class="work-title">Work and Projects</h1>
+        <div id="works">
+          <h1 id="work-title">WORK AND PROJECTS</h1>
+          <%-include ("partials/demoCard.ejs") %>
+        </div>
+        <hr style="width:120px; color:white; margin-bottom: 45px;">
     </div>
-    <%-include ("partials/footer.ejs") %>
+    <%-include ("partials/contact.ejs") %>
+      <%-include ("partials/footer.ejs") %>
 
-      <script src="scripts/index.js"></script>
+        <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>

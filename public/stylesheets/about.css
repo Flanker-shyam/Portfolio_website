@@ -1,0 +1,69 @@
+
+#about{
+    display: flex;
+    flex-direction: column;
+    margin:40px 0;
+}
+
+#details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about-me{
+    height:500px;
+    width:500px;
+    margin: 0 30px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#skills-graph{
+    height:500px;
+    width:600px;
+    margin: 0 30px;
+    color:rgb(255, 255, 255);
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+}
+
+.skill {
+    background-color:  rgb(35, 32, 32);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 15px;
+}
+
+.js {
+    width: 80%;
+}
+
+.node {
+    width: 80%;
+}
+.cpp{
+    width: 90%;
+}
+
+.react{
+    width:60%;
+}
+
+.java{
+    width:90%;
+}
+
+.networking{
+    width:70%;
+}
