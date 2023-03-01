@@ -3,7 +3,7 @@ const path = require("path");
 const cors = require("cors");
 const middlewares = require("./middleware");
 const app = express();
-const getData = require('./githubData');
+const getData = require('./githubData.js');
 
 const port = process.env.PORT || 3000;
 

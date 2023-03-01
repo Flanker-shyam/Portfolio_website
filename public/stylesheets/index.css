@@ -26,7 +26,7 @@ h1{
   width: 180px; 
   background-color: transparent;
   color: white;
-  margin-top: 12px;
+  margin-top: 25px;
   border-radius: 3px;
   font-size: 15px;
 }
@@ -46,8 +46,7 @@ h1{
   justify-content: center;
 }
 
-.work-title {
+#work-title {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-

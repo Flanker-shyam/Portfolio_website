@@ -1,4 +1,3 @@
-
 const fetch = require('node-fetch');
 const constants = require('constants');
 const { generateOptions } = require('./utils');
@@ -19,7 +18,6 @@ module.exports.fetchData = async function getUserRepoName(url)
     var ans = await getRepoData(arr);
     return ans;
 }
-
 
 async function getRepoData(arr1)
 {
